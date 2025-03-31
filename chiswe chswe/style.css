@@ -1,0 +1,437 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav-item:hover {
+    animation: scale-hover 0.3s forwards;
+}
+
+@keyframes blur-hover {
+    from {
+        filter: blur(0);
+    }
+    to {
+        filter: blur(5px);
+    }
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4b4848;
+}
+/* styles.css */
+.about {
+    background-color: #3374;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+.about {
+    background-color: #3374;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 3s;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blur-hover {
+    from {
+        filter: blur(0);
+    }
+    to {
+        filter: blur(5px);
+    }
+}
+
+/* styles.css */
+.services {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s;
+}
+
+.service-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #ff6600;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    color: #fff;
+    animation: fadeIn 2s;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-item ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+.skills {
+    background-color: #3374;
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeIn 3s;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 3s;
+}
+
+.skill-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background-color: #000;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    color: #fff;
+    animation: fadeIn 2s;
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-animate {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    opacity: 0;
+    animation: fadeInSkill 1s forwards;
+}
+
+@keyframes fadeInSkill {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-item ul li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.skill-item ul li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.skill-item ul li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.skill-item ul li:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.skill-item ul li:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+.contact {
+    background-color: #000;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    animation: fadeIn 2s;
+}
+
+.contact-item {
+    margin: 1rem;
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #ff6600;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  .p{
+    font-size: 14px;
+    color: #f4f4f4;
+  }
+  
